@@ -23,7 +23,7 @@ import './index.scss'
 class Index extends Component {
 
   config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: '解锁密码箱'
   }
 
   componentWillReceiveProps (nextProps) {

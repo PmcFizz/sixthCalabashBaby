@@ -20,13 +20,43 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/pwd-create/index',
+      'pages/pwd-preview/index',
+      'pages/pwd-store/index',
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
+      navigationBarTitleText: '六娃',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: "#666",
+      selectedColor: "#b4282d",
+      backgroundColor: "#fafafa",
+      borderStyle: 'black',
+      list: [{
+        pagePath: "pages/index/index",
+        // iconPath: "./assets/tab-bar/home.png",
+        // selectedIconPath: "./assets/tab-bar/home-active.png",
+        text: "首页"
+      }, {
+        pagePath: "pages/pwd-store/index",
+        // iconPath: "./assets/tab-bar/cate.png",
+        // selectedIconPath: "./assets/tab-bar/cate-active.png",
+        text: "密码仓库"
+      }, {
+        pagePath: "pages/pwd-preview/index",
+        // iconPath: "./assets/tab-bar/cart.png",
+        // selectedIconPath: "./assets/tab-bar/cart-active.png",
+        text: "解锁密码箱"
+      }, {
+        pagePath: "pages/pwd-create/index",
+        // iconPath: "./assets/tab-bar/user.png",
+        // selectedIconPath: "./assets/tab-bar/user-active.png",
+        text: "锻造密码箱"
+      }]
     }
   }
 
